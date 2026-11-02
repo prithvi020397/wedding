@@ -10,8 +10,8 @@ function doPost(e) {
     const d = JSON.parse(e.postData.contents);
     if (d.secret !== SECRET) return reply({ ok: false, error: "Wrong secret" });
 
-    // Replies from the Pellikuthuru page get their own tab; everything else (the wedding-only invite) goes to the "Only-Wedding" tab
-    const tab = d.sheet === "Pellikuthuru" ? "Pellikuthuru" : "Only-Wedding";
+    // Replies from the Pellikuthuru page get their own tab; the wedding-only site sends "Only-Wedding"; the older site sends nothing and keeps using "RSVPs"
+    const tab = (d.sheet === "Pellikuthuru" || d.sheet === "Only-Wedding") ? d.sheet : "RSVPs";
     const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(tab)
       || SpreadsheetApp.getActiveSpreadsheet().insertSheet(tab);
     // Headings on row 1 of every tab, added automatically if they're missing

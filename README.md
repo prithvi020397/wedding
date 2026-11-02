@@ -51,7 +51,7 @@ RSVP_SECRET=pj-2026-mangalyam-8431
 ## Before sharing
 - `config.js`: set `mapUrl` to your Google Maps link for "View location".
 - WhatsApp preview: `assets/og/couple-square.jpg` (just the couple photo, 900×900 square cropped from the top so WhatsApp shows both faces; baseline JPEG under 300 KB), served from the live site
-  https://prithvikijyo.vercel.app/. If the address changes, update `og:url`, `og:image` and `twitter:image`
+  https://wedding-beryl-tau.vercel.app/. If the address changes, update `og:url`, `og:image` and `twitter:image`
   in `index.html`. WhatsApp caches previews, so a changed card can take a while to show.
 
 ## Deploy

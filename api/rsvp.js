@@ -51,7 +51,7 @@ module.exports = async (req, res) => {
   if (Object.keys(errors).length) return send(res, 400, { ok: false, errors });
 
   const row = { name, phone, attending, events, guests, message, submittedAt: new Date().toISOString() };
-  if (pellikuthuru) row.sheet = "Pellikuthuru";
+  row.sheet = pellikuthuru ? "Pellikuthuru" : "Only-Wedding";   // this wedding-only site writes to its own tab
 
   const url = process.env.RSVP_SHEET_URL;
   if (!url) {

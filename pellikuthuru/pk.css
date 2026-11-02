@@ -1,0 +1,58 @@
+/* Pellikuthuru page: builds on /style.css. Traditional green and gold (banana leaves, mango-leaf thoranam,
+   kalash), so it sits beside the wedding's kumkum red without copying it. */
+:root { --leaf: #2f6b2a; --leaf-dk: #1b4a1c; }
+
+body.pk main { background: var(--ivory); }
+
+/* ---------- Opening ---------- */
+.pk-hero {
+  padding: 0 22px 34px;
+  background: radial-gradient(ellipse 95% 70% at 50% 35%, #fffdf6, #f1f2df 60%, #e3e8c8 100%);
+}
+.pk-hero .thoranam { margin: 0 -22px 22px; }
+.pk-title {
+  font-family: var(--serif); font-style: italic; font-weight: 600; font-size: clamp(36px, 10.5vw, 48px); line-height: 1.1;
+  color: var(--leaf-dk); margin-top: 8px; text-shadow: 0 2px 0 rgba(233,200,115,.6);
+}
+.pk-hero .muggu { margin: 10px auto 0; width: 190px; height: 50px; }
+/* the bride being adorned, in a gold frame */
+.pk-photo {
+  margin: 16px -4px 0; border-radius: 14px; overflow: hidden; background: #f6e7c4;
+  box-shadow: 0 0 0 3px #e9c873, 0 0 0 7px var(--leaf-dk), 0 0 0 9px #e9c873, 0 12px 24px rgba(40,50,10,.25);
+}
+.pk-photo img { width: 100%; height: auto; }
+.pk-lead { font-size: 17px; line-height: 1.45; color: var(--ink); max-width: 330px; margin: 18px auto 0; }
+
+/* ---------- Details ---------- */
+.pk-details { padding: 28px 24px 10px; }
+.pk-date { font-family: var(--serif); font-size: 19px; line-height: 1.45; color: var(--brown); }
+.pk-date b { font-weight: 700; }
+.pk-addr { font-family: var(--serif); font-size: 16px; font-weight: 600; color: var(--ink); margin-top: 8px; line-height: 1.35; }
+.pk-details .rc-actions { margin-top: 14px; }
+
+/* ---------- RSVP: the shared card, banded in banana-leaf green instead of kumkum ---------- */
+body.pk .rsvp { background: none; padding-top: 26px; }
+.pk-band {
+  padding-top: 26px;
+  background:
+    radial-gradient(circle at 50% 0, rgba(255,210,120,.22), transparent 60%),
+    repeating-linear-gradient(90deg, rgba(255,210,120,.05) 0 1px, transparent 1px 24px),
+    linear-gradient(var(--leaf), var(--leaf-dk));
+}
+.pk-band .rsvp-title { font-size: clamp(26px, 7.4vw, 34px); }
+.pk-band::after { background: radial-gradient(circle at 10px 0, var(--leaf-dk) 9px, transparent 10px) 0 0 / 20px 11px repeat-x; }
+body.pk .wa-btn { background: linear-gradient(var(--leaf), var(--leaf-dk)); box-shadow: 0 8px 18px rgba(27,74,28,.3); }
+
+#pkYes { display: grid; grid-template-rows: 1fr; transition: grid-template-rows .4s ease, opacity .4s ease; }
+#pkYes > .ay-inner { min-height: 0; overflow: hidden; padding: 0 4px 4px; margin: 0 -4px; }
+#pkYes.collapsed { grid-template-rows: 0fr; opacity: 0; }
+
+.pk-end { padding: 6px 24px 40px; }
+.pk-end .hashtag { margin-top: 0; }
+
+/* ---------- After sending: the form is put away, a green-and-gold thank-you takes over ---------- */
+.rsvp-card.sent .pk-band { display: none; }
+.rsvp-card.sent .rsvp-done { padding-top: 30px; }
+.pk-thanks { background: radial-gradient(ellipse 75% 60% at 50% 42%, #fffdf6 0%, #f1f2df 45%, #dfe6c2 80%, #c9d6a2 100%); }
+.pk-thanks .thanks-names { color: var(--leaf-dk); }
+.pk-thanks .thanks-back { border-color: var(--leaf); color: var(--leaf-dk); }

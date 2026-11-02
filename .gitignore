@@ -1,0 +1,21 @@
+# Local tooling
+.claude/
+.vercel/
+
+# RSVP sheet URL and secret for the local preview
+.env.local
+
+# Full-size originals — the site uses the compressed .webp copies
+assets/img/Ornate Golden Ganesha with Modaks.png
+assets/img/South Indian Wedding Couple Portrait.png
+assets/img/Telugu Wedding Couple Cutout Portrait.png
+assets/img/South Indian Wedding Couple Cutout.png
+assets/img/Ornate Golden Indian Wedding Mandap.png
+assets/img/Glamorous Indo-Western Wedding Couple.png
+assets/img/Golden Chain Wedding Portrait.png
+
+# Earlier couple photos no longer used
+assets/img/couple.webp
+assets/img/couple-cutout.webp
+.vercel
+.env*

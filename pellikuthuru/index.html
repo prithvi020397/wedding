@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Jyosthna's Pellikuthuri Veduka</title>
+  <meta property="og:title" content="Jyosthna's Pellikuthuri Veduka">
+  <meta property="og:description" content="You're invited · Wednesday, December 16, 2026 · 9:30 AM · McKinney">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://prithvikijyo.vercel.app/pellikuthuru/">
+  <meta property="og:image" content="https://prithvikijyo.vercel.app/assets/og/couple-square.jpg?v=1">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="900">
+  <meta property="og:image:height" content="900">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- Only for guests who are sent this link: kept out of search results and off the main invite -->
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#F6EEE1">
+  <link rel="icon" href="/assets/img/favicon-32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cinzel+Decorative:wght@700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Pinyon+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css?v=40">
+  <link rel="stylesheet" href="/pellikuthuru/pk.css?v=7">
+</head>
+<body class="opened pk">
+  <main>
+    <!-- ============ OPENING ============ -->
+    <section class="pk-hero">
+      <div class="thoranam" aria-hidden="true"></div>
+      <p class="eyebrow">You're invited to</p>
+      <h1 class="pk-title">Jyosthna's<br>Pellikuthuri Veduka</h1>
+      <svg class="muggu" viewBox="0 0 220 60" aria-hidden="true"><use href="#muggu"/></svg>
+      <figure class="pk-photo"><img src="/assets/img/pellikuthuru.webp" width="1200" height="801" alt="Illustration of the bride smiling as her friends tie jasmine in her hair and adorn her"></figure>
+      <p class="pk-lead">Our Jyosthna is all set to become a bride. Come celebrate her and shower her with love and blessings.</p>
+      <div class="kalash-row" aria-hidden="true">
+        <svg class="banana" viewBox="0 0 80 150"><use href="#banana"/></svg>
+        <span class="lamp"></span>
+        <svg class="kalash" viewBox="0 0 120 130"><use href="#kalash"/></svg>
+        <span class="lamp"></span>
+        <svg class="banana flip-x" viewBox="0 0 80 150"><use href="#banana"/></svg>
+      </div>
+    </section>
+
+    <!-- ============ DETAILS + RSVP ============ -->
+    <div class="pk-open" id="pkOpen">
+      <section class="pk-details">
+        <p class="pk-date"><b>Wednesday, December 16, 2026</b><br>9:30 AM CST onwards</p>
+        <p class="pk-addr">1610 Allison Lane<br>McKinney, TX 75071</p>
+        <p class="rc-dress"><span>Dress code</span>Traditional</p>
+        <div class="rc-actions">
+          <a class="pill" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=1610%20Allison%20Lane%2C%20McKinney%2C%20TX%2075071">View location</a>
+          <a class="pill" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Jyosthna%27s%20Pellikuthuri%20Veduka&amp;dates=20261216T153000Z/20261216T190000Z&amp;location=1610%20Allison%20Lane%2C%20McKinney%2C%20TX%2075071">+ Add to calendar</a>
+        </div>
+      </section>
+
+      <section class="rsvp">
+        <div class="rsvp-card">
+          <header class="rsvp-band pk-band">
+            <p class="eyebrow light">Kindly respond</p>
+            <h2 class="rsvp-title">Will you be there for her?</h2>
+            <p class="rsvp-tel">తప్పకుండా రండి, మా అమ్మాయిని ఆశీర్వదించండి</p>
+          </header>
+
+          <form id="pkForm" novalidate>
+            <div class="step">
+              <label class="step-label" for="pkName"><span class="step-no">1</span>Your name</label>
+              <input id="pkName" type="text" placeholder="e.g. Lakshmi Iyer" autocomplete="name" required>
+              <input id="pkPhone" type="tel" placeholder="Phone (optional)" autocomplete="tel" inputmode="tel">
+            </div>
+
+            <div class="step">
+              <span class="step-label"><span class="step-no">2</span>Will you come?</span>
+              <div class="toggle" role="radiogroup" aria-label="Will you come?">
+                <button type="button" class="opt" data-attend="yes" role="radio" aria-checked="false">
+                  <span class="opt-ico" aria-hidden="true">🙏</span><b>Joyfully yes</b><small>తప్పకుండా వస్తాం</small>
+                </button>
+                <button type="button" class="opt" data-attend="no" role="radio" aria-checked="false">
+                  <span class="opt-ico" aria-hidden="true">💌</span><b>Sending blessings</b><small>ఆశీస్సులు పంపుతాం</small>
+                </button>
+              </div>
+            </div>
+
+            <div id="pkYes" class="collapsed">
+             <div class="ay-inner">
+              <div class="step">
+                <label class="step-label" for="pkCount"><span class="step-no">3</span>Number of guests</label>
+                <div class="stepper">
+                  <button type="button" class="st-btn" data-step="-1" aria-label="Fewer guests">−</button>
+                  <input id="pkCount" type="number" min="1" max="20" value="1" inputmode="numeric" aria-label="Number of guests">
+                  <button type="button" class="st-btn" data-step="1" aria-label="More guests">+</button>
+                </div>
+              </div>
+             </div>
+            </div>
+
+            <div class="step">
+              <label class="step-label" for="pkMsg"><span class="step-no" id="pkMsgNo">3</span>A message for the bride <i>optional</i></label>
+              <textarea id="pkMsg" rows="3" maxlength="500" placeholder="A wish for Jyosthna as she becomes a bride…"></textarea>
+            </div>
+            <!-- Hidden from people; spam bots fill it in and get ignored -->
+            <input class="hp" type="text" id="pkCompany" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+            <p class="f-error" id="pkError" aria-live="polite"></p>
+            <button type="submit" class="wa-btn" id="pkSend">Send RSVP</button>
+          </form>
+
+          <div class="rsvp-done" id="pkDone" hidden>
+            <p class="rsvp-done-title">Thank you!</p>
+            <p class="rsvp-done-te">ధన్యవాదాలు</p>
+            <p class="rsvp-done-msg" id="pkDoneMsg"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="pk-end">
+        <p class="hashtag">#PrithviकीJyo</p>
+        <p class="fin-date">December 16</p>
+      </section>
+    </div>
+  </main>
+
+  <!-- ============ AFTER THE RSVP: a full-screen thank-you, the form is put away ============ -->
+  <div class="thanks pk-thanks" id="pkThanks" role="dialog" aria-modal="true" aria-labelledby="pkThanksTitle" hidden>
+    <div class="thanks-card">
+      <svg class="thanks-kalash" viewBox="0 0 120 130" aria-hidden="true"><use href="#kalash"/></svg>
+      <p class="thanks-dear" id="pkThanksDear"></p>
+      <p class="thanks-names" id="pkThanksTitle">Thank you!</p>
+      <p class="thanks-te" id="pkThanksTe"></p>
+      <svg class="thanks-orn" viewBox="0 0 220 60" aria-hidden="true"><use href="#muggu"/></svg>
+      <p class="thanks-msg" id="pkThanksMsg"></p>
+      <p class="thanks-sign">With love from our family</p>
+      <button class="thanks-back" id="pkThanksBack">View the invitation again</button>
+    </div>
+  </div>
+
+  <!-- Artwork shared with the main invite (kalash, banana leaves, muggu) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="gGold" x1="0" x2="1">
+        <stop offset="0" stop-color="#8a5a12"/><stop offset=".35" stop-color="#f3d27a"/>
+        <stop offset=".6" stop-color="#c8962f"/><stop offset="1" stop-color="#7a4d0e"/>
+      </linearGradient>
+      <symbol id="kalash" viewBox="0 0 120 130">
+        <g fill="#3f7a2a">
+          <path d="M60 34 C40 30 22 20 14 6 C32 8 50 18 60 34Z"/><path d="M60 34 C80 30 98 20 106 6 C88 8 70 18 60 34Z"/>
+          <path d="M60 34 C48 24 40 10 42 0 C54 8 60 20 60 34Z" fill="#5a9a3a"/><path d="M60 34 C72 24 80 10 78 0 C66 8 60 20 60 34Z" fill="#5a9a3a"/>
+        </g>
+        <ellipse cx="60" cy="30" rx="15" ry="13" fill="#8a5a2b"/><ellipse cx="57" cy="26" rx="6" ry="4" fill="#b07a42"/>
+        <path d="M38 44 h44 l-4 8 h-36Z" fill="url(#gGold)"/>
+        <path d="M42 52 C14 62 14 112 40 122 h40 C106 112 106 62 78 52Z" fill="url(#gGold)"/>
+        <path d="M24 84 h72" stroke="#9e1b1b" stroke-width="5"/><path d="M26 92 h68" stroke="#7a4d0e" stroke-width="1.5"/>
+        <g fill="#9e1b1b"><circle cx="60" cy="72" r="5"/></g>
+        <path d="M44 122 h32 l6 8 h-44Z" fill="#7a4d0e"/>
+        <g fill="#f29a1d"><circle cx="30" cy="50" r="5"/><circle cx="90" cy="50" r="5"/><circle cx="22" cy="60" r="4"/><circle cx="98" cy="60" r="4"/></g>
+      </symbol>
+      <symbol id="banana" viewBox="0 0 80 150">
+        <path d="M36 150 C34 110 36 80 40 50 C44 80 46 110 44 150Z" fill="#7a9a3a"/>
+        <g fill="#4f8a2c" stroke="#3a6a1e" stroke-width="1">
+          <path d="M40 52 C20 40 6 20 2 2 C18 10 34 26 40 52Z"/>
+          <path d="M40 52 C60 38 74 22 78 4 C62 12 46 28 40 52Z"/>
+          <path d="M40 70 C18 66 4 52 0 36 C16 40 32 52 40 70Z" fill="#5f9e36"/>
+          <path d="M40 70 C62 64 76 50 80 34 C64 40 48 52 40 70Z" fill="#5f9e36"/>
+          <path d="M40 52 C38 32 40 14 44 0 C48 16 46 34 40 52Z" fill="#6cad3e"/>
+        </g>
+        <g fill="#e8c23a"><ellipse cx="34" cy="90" rx="3" ry="7"/><ellipse cx="40" cy="92" rx="3" ry="7"/><ellipse cx="46" cy="90" rx="3" ry="7"/></g>
+      </symbol>
+      <symbol id="muggu" viewBox="0 0 220 60">
+        <g fill="none" stroke="#b8892f" stroke-width="1.4" stroke-linecap="round">
+          <path d="M0 30 H70 M150 30 H220"/>
+          <path d="M110 6 C126 18 126 42 110 54 C94 42 94 18 110 6Z"/>
+          <path d="M86 30 C98 14 122 14 134 30 C122 46 98 46 86 30Z"/>
+          <path d="M92 12 C106 22 106 38 92 48 M128 12 C114 22 114 38 128 48"/>
+          <circle cx="110" cy="30" r="5" fill="#9e1b1b" stroke="none"/>
+          <path d="M70 30 C76 22 82 22 86 30 C82 38 76 38 70 30Z M150 30 C144 22 138 22 134 30 C138 38 144 38 150 30Z"/>
+        </g>
+        <g fill="#b8892f"><circle cx="110" cy="0.5" r="1.6"/><circle cx="110" cy="59.5" r="1.6"/><circle cx="80" cy="14" r="1.6"/><circle cx="140" cy="14" r="1.6"/><circle cx="80" cy="46" r="1.6"/><circle cx="140" cy="46" r="1.6"/><circle cx="58" cy="30" r="2"/><circle cx="162" cy="30" r="2"/><circle cx="40" cy="30" r="1.4"/><circle cx="180" cy="30" r="1.4"/></g>
+        <g fill="#ef7d14"><circle cx="98" cy="30" r="2.4"/><circle cx="122" cy="30" r="2.4"/><circle cx="110" cy="18" r="2.4"/><circle cx="110" cy="42" r="2.4"/></g>
+      </symbol>
+    </defs>
+  </svg>
+
+  <script src="/pellikuthuru/pk.js?v=6"></script>
+</body>
+</html>
